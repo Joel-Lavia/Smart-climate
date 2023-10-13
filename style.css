@@ -1,11 +1,18 @@
+body{
+    margin:0;
+    padding:0;
+}
 /*Variable css*/
 :root{
 --alignBlock:flex;
 }
-/*appliquer du style a la nav bar */
+/*apply style to the nav bar pour créer des espace entre le page de navigation et le logo */
 nav{
 display: var(--alignBlock);
 justify-content:space-around;
+font-weight: bold;
+font-size:15px;
+color:black;
 }
 #menuDenavigation{
 display:var(--alignBlock);
@@ -14,3 +21,20 @@ gap:50px;
 nav li{
 list-style-type: none;
 }
+/*Fixer le header*/
+header{
+    background-color: rgb(191, 191, 191);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/*retirer le ligne qui s'afficher sur le lien de navigation*/
+ a{
+text-decoration:none;
+}
+/*aapliquer du style a la div newsMeteos*/
+#newsMeteo{
+background-color: rgb(201, 103, 103);
+}
+
