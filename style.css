@@ -35,6 +35,9 @@ text-decoration:none;
 }
 /*aapliquer du style a la div newsMeteos*/
 #newsMeteo{
-background-color: rgb(201, 103, 103);
+}
+main{
+margin:50px;
+background-color: rgb(187, 187, 187);
 }
 
