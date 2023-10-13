@@ -1,0 +1,16 @@
+/*Variable css*/
+:root{
+--alignBlock:flex;
+}
+/*appliquer du style a la nav bar */
+nav{
+display: var(--alignBlock);
+justify-content:space-around;
+}
+#menuDenavigation{
+display:var(--alignBlock);
+gap:50px;
+}
+nav li{
+list-style-type: none;
+}
