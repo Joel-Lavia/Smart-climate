@@ -33,9 +33,20 @@ header{
  a{
 text-decoration:none;
 }
-/*aapliquer du style a la div newsMeteos*/
-#newsMeteo{
+/*Donner un background-color a la class box,des bordur et aligner sont text */
+.box{
+background-color: rgb(135, 135, 138);
+border: 2px solid black;
+text-align: center;
 }
+/*appliquer du css grids sur la class newsMeteo*/
+#newsMeteo{
+display: grid;
+grid-template-columns:250px 250px; 
+grid-template-rows:200px 200px;
+gap:10px;   
+}
+
 main{
 margin:50px;
 background-color: rgb(187, 187, 187);
