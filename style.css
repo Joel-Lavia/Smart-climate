@@ -1,7 +1,7 @@
-body{
-    margin:0;
-    padding:0;
-}
+*{
+    margin: 0;
+    padding: 0;
+   }
 /*Variable css*/
 :root{
 --alignBlock:flex;
@@ -13,6 +13,7 @@ justify-content:space-around;
 font-weight: bold;
 font-size:15px;
 color:black;
+padding:20px;
 }
 #menuDenavigation{
 display:var(--alignBlock);
@@ -33,22 +34,40 @@ header{
  a{
 text-decoration:none;
 }
-/*Donner un background-color a la class box,des bordur et aligner sont text */
+/*appliquer a la class box, un background-color ,des bordur et aligner sont text */
 .box{
 background-color: rgb(135, 135, 138);
 border: 2px solid black;
 text-align: center;
 }
-/*appliquer du css grids sur la class newsMeteo*/
+/*appliquer du css grids sur l'id newsMeteo*/
 #newsMeteo{
 display: grid;
 grid-template-columns:250px 250px; 
 grid-template-rows:200px 200px;
 gap:10px;   
 }
-
 main{
-margin:50px;
-background-color: rgb(187, 187, 187);
+    display:grid;
+    grid-template-columns:800px 500px;
+    grid-template-rows:800px 500px;
+    justify-content:center;
+    margin-top:60px;
+    gap:20px;
+
+}
+.boxSection{
+padding-left:150px;
+}
+/*stylier les tableau*/
+td{
+border:1px solid black;
+}
+#tableDonnées{
+display:flex;
+gap:20px;
+}
+section{
+background-color: rgb(120, 120, 181);
 }
 
