@@ -1,20 +1,21 @@
 //1.ciblé les input des données météos
 //2.Cibler les cases qui vaut afficher les données météos
-const inputdata = document.querySelectorAll("input");
-const weatherDataBox = document.querySelectorAll(".weatherData")
+//3.cibler le boutton evoyer
 const bouttonEnvoyer = document.querySelector("button");
-//je le stock dans une variable
-for(let i =0; i<inputdata.length;i++){
-    let inputdatas = inputdata[i];
-bouttonEnvoyer.addEventListener("click",function(event){
-event.preventDefault();
-}
-)
-}
+    bouttonEnvoyer.addEventListener("click", function (event) {
+     event.preventDefault(); // Empêcher le formulaire de se soumettre
 
-    for(let i = 0;i<weatherDataBox.length;i++){
-        let weatherDataBoxs = weatherDataBox[i]; 
-        weatherDataBoxs.addEventListener("click",function(event){
-        
-        })
+        const inputdata = document.querySelectorAll("input");//Sélection des éléments inputs
+        const weatherDataBox = document.querySelectorAll(".weatherData"); // Sélection des éléments qui ont la class "weatherData"
+//la première boucle parcours les elements inputs et deuxième boucle parcours les  éléments avec la class "weatherData"
+        for(let i = 0; i < inputdata.length; i++) {
+            const inputdatas = inputdata[i];
+            for(let j = 0; j < weatherDataBox.length; j++) {
+                const weatherDataBoxs = weatherDataBox[j];
+//condition de verification des indix des éléments inputs et class weatherData
+                if (i === j) {
+                    weatherDataBoxs.innerText = inputdatas.value;
+                }
+            }
         }
+    });
