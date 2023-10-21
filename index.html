@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
 <!--Le header de du site et de la page d'accueill qui comprend 2 page de navigation-->
@@ -40,22 +41,22 @@
             <!--Temperature-->
             <tr>
                 <td>Temperature</td>
-                <td>23</td>
+                <td class="weatherData">23</td>
             </tr>
             <!--Precipitation-->
             <tr>
                 <td>Precipitation</td>
-                <td>44</td>
+                <td class="weatherData">44</td>
             </tr>
             <!--Humidité relative-->
             <tr>
                 <td>Humidité relative</td>
-                <td>58</td>
+                <td class="weatherData">58</td>
             </tr>
             <!--vitesse du vent-->
             <tr>
                 <td>vitesse du vent</td>
-                <td>50</td>
+                <td class="weatherData">50</td>
             </tr>
          </table>
 
@@ -64,22 +65,22 @@
             <!--pression atmospherique-->
             <tr>
                 <td>pression atmospherique</td>
-                <td>23</td>
+                <td class="weatherData">23</td>
             </tr>
             <!--rayonnement solaire -->
             <tr>
                 <td>rayonnement solaire </td>
-                <td>44</td>
+                <td class="weatherData">44</td>
             </tr>
             <!--niveau de la mer-->
             <tr>
                 <td>niveau de la mer</td>
-                <td>58</td>
+                <td class="weatherData">58</td>
             </tr>
             <!--direction du vent-->
             <tr>
                 <td>direction du vent</td>
-                <td>50</td>
+                <td class="weatherData">50</td>
             </tr>
          </table>
         </div>
@@ -94,43 +95,42 @@
                 <!--Temperature-->
                 <p>
                 <label for="Temperature">Temperature</label>
-                <input type="number" name="Temperature" id="Temperature" placeholder="Veuillez entrer les données">
-                </p> <br>
+                <input type="number" name="Temperature" id="Temperature" placeholder="Veuillez entrer les données" value="">
+                </p><br>
                 <!--Precipitation-->
                 <p>
                     <label for="Precipitation">Precipitation</label>
-                    <input type="number" name="Precipitation" id="Precipitation" placeholder="Veuillez entrer les données">
+                    <input type="number" name="Precipitation" id="Precipitation" placeholder="Veuillez entrer les données" value="">
                     </p> <br>
-
                 <!--Humidité relative-->  
                     <p>
                         <label for="Humidité relative">Humidité relative</label>
-                        <input type="number" name="Humidité-relative" id="Humidité-relative" placeholder="Veuillez entrer les données">
+                        <input type="number" name="Humidité-relative" id="Humidité-relative" placeholder="Veuillez entrer les données" value="">
                         </p> <br>
                     <!--vitesse du vent-->
                         <p>
                             <label for="vitesse-du-vent">vitesse du ven</label>
-                            <input type="number" name="vitesse-du-vent" id="vitesse-du-vent" placeholder="Veuillez entrer les données">
+                            <input type="number" name="vitesse-du-vent" id="vitesse-du-vent" placeholder="Veuillez entrer les données" value="">
                             </p>
                             <!--pression atmospherique-->
                             <p> 
                                 <label for="pression-atmospherique">pression atmospherique</label>
-                                <input type="number" name="pression-atmospherique" id="pression-atmospherique" placeholder="Veuillez entrer les données">
+                                <input type="number" name="pression-atmospherique" id="pression-atmospherique" placeholder="Veuillez entrer les données" value="">
                                 </p> <br>
                                 <!--rayonnement solaire -->
                                 <p>
                                     <label for="rayonnement-solaire ">rayonnement-solaire</label>
-                                    <input type="number" name="rayonnement-solaire " id="rayonnement-solaire " placeholder="Veuillez entrer les données">
+                                    <input type="number" name="rayonnement-solaire " id="rayonnement-solaire " placeholder="Veuillez entrer les données" value="">
                                     </p> <br>
                                     <!--niveau de la mer-->
                                     <p>
                                         <label for="niveau-de-la-mer">niveau de la mer</label>
-                                        <input type="number" name="niveau-de-la-mer" id="niveau-de-la-mer" placeholder="Veuillez entrer les données">
+                                        <input type="number" name="niveau-de-la-mer" id="niveau-de-la-mer" placeholder="Veuillez entrer les données" value="">
                                         </p> <br>
                                     <!--direction du vent-->
                                         <p>
                                             <label for="direction-du-vent">direction du vent</label>
-                                            <input type="number" name="direction-du-vent" id="direction-du-vent" placeholder="Veuillez entrer les données">
+                                            <input type="number" name="direction-du-vent" id="direction-du-vent" placeholder="Veuillez entrer les données" value="">
                                             </p>
             </form>
         </div>
