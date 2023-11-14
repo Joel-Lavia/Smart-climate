@@ -47,14 +47,10 @@ grid-template-columns:250px 250px;
 grid-template-rows:200px 200px;
 gap:10px;   
 }
-main{
-    display:grid;
-    grid-template-columns:800px 500px;
-    grid-template-rows:800px 500px;
-    justify-content:center;
+ main{
     margin-top:60px;
     gap:20px;
-
+    background-color: rgb(71, 71, 215);
 }
 .boxSection{
 padding-left:150px;
@@ -67,7 +63,3 @@ border:1px solid black;
 display:flex;
 gap:20px;
 }
-section{
-background-color: rgb(120, 120, 181);
-}
-
