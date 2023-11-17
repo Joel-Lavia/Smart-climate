@@ -8,6 +8,7 @@
     <script src="index.js" defer></script>
 </head>
 <body>
+
 <!--Le header de du site et de la page d'accueill qui comprend 2 page de navigation-->
 <header>
 <nav>
@@ -20,9 +21,16 @@
     </ul>
 </nav>
 </header>
+
 <!--Le main du site -->
 <main>
-    <!--Premier grande section qui contiendras les 2 grande div : infos méteos et les données méteos-->
+<!--recherche des villes -->
+
+  <div>
+    <input type="search" placeholder="Ville" > 
+    <button type="submit">Recherche</button>
+  </div>
+    <!--section qui contiendras les 2 grande div : infos méteos et les données méteos-->
  <section class="boxSection">
 <!--addition of the div which would contain the weather information-->
  <h2>Nom du lieu du climat</h2>
@@ -34,6 +42,7 @@
         </div>
         <!-- tableu d'affichage des données méteos-->
         <h2>Données méteos</h2>
+        
         <div id="tableDonnées">
          <!--debut du Premier tableau-->
          
@@ -84,7 +93,7 @@
             </tr>
          </table>
         </div>
-        
+ 
     </section>
 </main>
 

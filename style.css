@@ -25,7 +25,7 @@ list-style-type: none;
 /*Fixer le header*/
 header{
     background-color: rgb(191, 191, 191);
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -37,25 +37,21 @@ text-decoration:none;
 /*appliquer a la class box, un background-color ,des bordur et aligner sont text */
 .box{
 background-color: rgb(135, 135, 138);
-border: 2px solid black;
-text-align: center;
+border:2px solid black;
+text-align:center;
+}
+main{
+margin-top:60px;
 }
 /*appliquer du css grids sur l'id newsMeteo*/
 #newsMeteo{
-display: grid;
+display:grid;
 grid-template-columns:250px 250px; 
 grid-template-rows:200px 200px;
 gap:10px;   
 }
- main{
-    margin-top:60px;
-    gap:20px;
-    background-color: rgb(71, 71, 215);
-}
-.boxSection{
-padding-left:150px;
-}
-/*stylier les tableau*/
+
+/*style du tableau*/
 td{
 border:1px solid black;
 }
