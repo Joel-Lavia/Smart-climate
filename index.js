@@ -6,16 +6,21 @@ let url = `https://api.openweathermap.org/data/2.5/weather?q=Kinshasa&lang=fr&ap
 
 const nomDelaVille = document.querySelector("h2");
 const previsionClimatique = document.querySelectorAll(".box");
+function previsionweather(firstPrevision,secondPrevision){
+    for(let i = 0; i<previsionClimatique.length;i++){
+        previsionClimatique[0].innerText = firstPrevision.description;
+        previsionClimatique[1].innerText = secondPrevision.description;
+        }  
+}
+
 console.log(previsionClimatique);
 
 fetch(url).then( Response=>
     Response.json().then(data =>
         {
             nomDelaVille.innerText = data.name;
-            for(let i = 0; i<previsionClimatique.length;i++){
-            previsionClimatique[0].innerText = data.weather[0].description;
-            previsionClimatique[1].innerText = data.weather[1].description;
-            }
+            previsionweather(data.weather[0],data.weather[1]);
+            
             console.log(data)
            
         
