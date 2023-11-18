@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/0cb0a4210a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!--Lien cdn-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!---->
 
 <!--Le header de du site et de la page d'accueill qui comprend 2 page de navigation-->
 <header>
@@ -25,73 +30,35 @@
 <!--Le main du site -->
 <main>
 <!--recherche des villes -->
+<img src="rain_578146.png" style="height:100px; width:100px;" alt="">
+ <section>
+    <div>
+        <input type="search" placeholder="Ville" > 
+        <button type="submit">Recherche</button>
+      </div>
+ </section>
 
-  <div>
-    <input type="search" placeholder="Ville" > 
-    <button type="submit">Recherche</button>
-  </div>
-    <!--section qui contiendras les 2 grande div : infos méteos et les données méteos-->
- <section class="boxSection">
+ <section class="sectionPrevisionMeteo">
 <!--addition of the div which would contain the weather information-->
  <h2>Nom du lieu du climat</h2>
         <div id="newsMeteo">
             <div class="box">prévision météo du matin</div>
             <div class="box">prévision météo de midi</div>
+            <div class="box" style= "display: flex; grid-column-start:1;
+            grid-column-end:3; align-items:center; justify-content:center;">Degree<i class="fa-solid fa-temperature-high"></i></div>   
         </div>
-        <!-- tableu d'affichage des données méteos-->
-        <h2>Données méteos</h2>
-        
-        <div id="tableDonnées">
-         <!--debut du Premier tableau-->
-         
-         <table>
-            <!--Temperature-->
-            <tr>
-                <td>Temperature</td>
-                <td class="weatherData">23</td>
-            </tr>
-            <!--Precipitation-->
-            <tr>
-                <td>Precipitation</td>
-                <td class="weatherData">44</td>
-            </tr>
-            <!--Humidité relative-->
-            <tr>
-                <td>Humidité relative</td>
-                <td class="weatherData">58</td>
-            </tr>
-            <!--vitesse du vent-->
-            <tr>
-                <td>vitesse du vent</td>
-                <td class="weatherData">50</td>
-            </tr>
-         </table>
+     
+    </section>
 
-        <!-- debut du deuxième tableau-->
-        <table>
-            <!--pression atmospherique-->
-            <tr>
-                <td>pression atmospherique</td>
-                <td class="weatherData">23</td>
-            </tr>
-            <!--rayonnement solaire -->
-            <tr>
-                <td>rayonnement solaire </td>
-                <td class="weatherData">44</td>
-            </tr>
-            <!--niveau de la mer-->
-            <tr>
-                <td>niveau de la mer</td>
-                <td class="weatherData">58</td>
-            </tr>
-            <!--direction du vent-->
-            <tr>
-                <td>direction du vent</td>
-                <td class="weatherData">50</td>
-            </tr>
-         </table>
-        </div>
- 
+    <!--section des parametres climatiques-->
+    <section class="sectionParametreclimatique" >
+         <!--Parametre Climatique-->
+         <div id="parametres">
+            <div class="boxsetting">1<i class="fa-solid fa-temperature-high" style="width:300px; height:300px;"></i></div> <!--Temperature--> 
+            <div class="boxsetting">3<i class="fa-solid fa-temperature-high"></i></div> <!--Temperature max-->
+            <div class="boxsetting">4<i class="fa-solid fa-temperature-high"></i></div> <!--Temperature min-->
+            <div class="boxsetting">5<i class="fa-solid fa-wind"></i></div><!--Vitesse du vent-->
+         </div> 
     </section>
 </main>
 

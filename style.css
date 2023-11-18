@@ -42,20 +42,45 @@ text-align:center;
 }
 main{
 margin-top:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+background-image:url(sun-clouds.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
 }
 /*appliquer du css grids sur l'id newsMeteo*/
 #newsMeteo{
-display:grid;
-grid-template-columns:250px 250px; 
-grid-template-rows:200px 200px;
-gap:10px;   
+    display:grid;
+    grid-template-columns:250px 250px ; 
+    grid-template-rows:200px 200px;
+    gap:10px;   
+    }
+section{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
-
-/*style du tableau*/
-td{
-border:1px solid black;
+.sectionParametreclimatique{
+} 
+.boxsetting{
+background-color:rgb(138, 138, 242);
+border:1px solid rgb(174, 169, 169);
 }
-#tableDonnées{
+#parametres{
+ display:grid;
+ grid-template-columns:230px 230px 230px 230px;
+ grid-template-rows: 230px 230px 230px 230px;
+ gap:12px;
+} 
+i{
+font-size:70px;
 display:flex;
-gap:20px;
-}
+justify-content:center;
+align-items:center;
+color:white;
+}  
