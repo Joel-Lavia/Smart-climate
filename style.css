@@ -47,7 +47,6 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 flex-wrap:wrap;
-gap:20px;
 background-image:url(sun-clouds.jpg);
 background-attachment:fixed;
 background-repeat:no-repeat;
@@ -56,17 +55,9 @@ background-repeat:no-repeat;
 #newsMeteo{
     display:grid;
     grid-template-columns:250px 250px ; 
-    grid-template-rows:200px 200px;
-    gap:10px;   
+    grid-template-rows:250px 250px;
+    gap:10px;  
     }
-section{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-.sectionParametreclimatique{
-} 
 .boxsetting{
 background-color:rgb(138, 138, 242);
 border:1px solid rgb(174, 169, 169);
@@ -83,4 +74,8 @@ display:flex;
 justify-content:center;
 align-items:center;
 color:white;
+}
+.parametreClimatique{
+background-color: blue;
+
 }  

@@ -30,34 +30,32 @@
 <!--Le main du site -->
 <main>
 <!--recherche des villes -->
+ <section style="display:flex;flex-direction:column; justify-content:center;align-items:center;">
 <img src="rain_578146.png" style="height:100px; width:100px;" alt="">
- <section>
     <div>
         <input type="search" placeholder="Ville" > 
         <button type="submit">Recherche</button>
       </div>
  </section>
 
- <section class="sectionPrevisionMeteo">
+ <section>
 <!--addition of the div which would contain the weather information-->
- <h2>Nom du lieu du climat</h2>
+ <h2 style="text-align: center;"></h2>
         <div id="newsMeteo">
             <div class="box">prévision météo du matin</div>
-            <div class="box">prévision météo de midi</div>
-            <div class="box" style= "display: flex; grid-column-start:1;
-            grid-column-end:3; align-items:center; justify-content:center;">Degree<i class="fa-solid fa-temperature-high"></i></div>   
+            <div class="box">Degree</div>   
         </div>
-     
     </section>
 
     <!--section des parametres climatiques-->
-    <section class="sectionParametreclimatique" >
+    <section class="parametreClimatique" >
          <!--Parametre Climatique-->
          <div id="parametres">
-            <div class="boxsetting">1<i class="fa-solid fa-temperature-high" style="width:300px; height:300px;"></i></div> <!--Temperature--> 
-            <div class="boxsetting">3<i class="fa-solid fa-temperature-high"></i></div> <!--Temperature max-->
-            <div class="boxsetting">4<i class="fa-solid fa-temperature-high"></i></div> <!--Temperature min-->
-            <div class="boxsetting">5<i class="fa-solid fa-wind"></i></div><!--Vitesse du vent-->
+            <div class="boxsetting" style="font-size:59px; color:whitesmoke;display:flex;justify-content:center;align-items:center" ></div> <!--Temperature--> 
+            <div class="boxsetting" style="font-size:59px; color:whitesmoke;display:flex;justify-content:center;align-items:center"></div> <!--Temperature max-->
+            <div class="boxsetting" style="font-size:59px; color:whitesmoke;display:flex;justify-content:center;align-items:center"></div> <!--Temperature max-->
+            <div class="boxsetting" style="font-size:59px; color:whitesmoke;display:flex;justify-content:center;align-items:center"></div> <!--Temperature max-->
+            <div class="boxsetting" style="font-size:59px; color:whitesmoke;display:flex;justify-content:center;align-items:center"></div> <!--Temperature min-->
          </div> 
     </section>
 </main>
