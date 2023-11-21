@@ -39,9 +39,10 @@ text-decoration:none;
 background-color: rgb(135, 135, 138);
 border:2px solid black;
 text-align:center;
+width:340px;
+height:230px;
 }
 main{
-margin-top:60px;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -50,32 +51,47 @@ flex-wrap:wrap;
 background-image:url(sun-clouds.jpg);
 background-attachment:fixed;
 background-repeat:no-repeat;
+gap:20px
 }
 /*appliquer du css grids sur l'id newsMeteo*/
 #newsMeteo{
-    display:grid;
-    grid-template-columns:250px 250px ; 
-    grid-template-rows:250px 250px;
-    gap:10px;  
+    display:flex;
+    flex-direction:column;
+    gap:12px;
     }
+    input{
+        font-size:20px;
+        width:190px;
+        height:50px;
+        border-radius:10px;
+        border-style:none;
+        background-color: rgb(241, 241, 255);
+    }
+button{
+        font-size:20px;
+        width:120px;
+        height:50px;
+        border-radius:10px;
+        border-style:none;
+        background-color: blue;
+}
 .boxsetting{
-background-color:rgb(138, 138, 242);
-border:1px solid rgb(174, 169, 169);
+opacity:0.7;
+background-color:rgb(155, 190, 220);
+border:1px solid rgb(155, 190, 220);
 }
 #parametres{
  display:grid;
- grid-template-columns:230px 230px 230px 230px;
- grid-template-rows: 230px 230px 230px 230px;
+ grid-template-columns:210px 210px 210px 210px 210px;
+ grid-template-rows: 210px 210px 210px 210px 210px;
  gap:12px;
 } 
 i{
-font-size:70px;
+font-size:50px;
 display:flex;
 justify-content:center;
 align-items:center;
 color:white;
 }
-.parametreClimatique{
-background-color: blue;
-
-}  
+    
+     
