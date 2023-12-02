@@ -2,96 +2,55 @@
     margin: 0;
     padding: 0;
    }
-/*Variable css*/
-:root{
---alignBlock:flex;
-}
-/*apply style to the nav bar pour créer des espace entre le page de navigation et le logo */
-nav{
-display: var(--alignBlock);
-justify-content:space-around;
-font-weight: bold;
-font-size:15px;
-color:black;
-padding:20px;
-}
-#menuDenavigation{
-display:var(--alignBlock);
-gap:50px;
-}
-nav li{
-list-style-type: none;
-}
-/*Fixer le header*/
-header{
-    background-color: rgb(191, 191, 191);
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-/*retirer le ligne qui s'afficher sur le lien de navigation*/
- a{
-text-decoration:none;
-}
-/*appliquer a la class box, un background-color ,des bordur et aligner sont text */
-.box{
-background-color: rgb(135, 135, 138);
-border:2px solid black;
-text-align:center;
-width:340px;
-height:230px;
-}
 main{
+background-color: rgb(228, 228, 239);
+gap:50px;
+} 
+#parametres{
 display:flex;
-flex-direction:column;
+flex-wrap:wrap;
 justify-content:center;
 align-items:center;
-flex-wrap:wrap;
-background-image:url(sun-clouds.jpg);
-background-attachment:fixed;
-background-repeat:no-repeat;
-gap:20px
-}
-/*appliquer du css grids sur l'id newsMeteo*/
-#newsMeteo{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    }
-    input{
-        font-size:20px;
-        width:190px;
-        height:50px;
-        border-radius:10px;
-        border-style:none;
-        background-color: rgb(241, 241, 255);
-    }
-button{
-        font-size:20px;
-        width:120px;
-        height:50px;
-        border-radius:10px;
-        border-style:none;
-        background-color: blue;
+gap:20px;
 }
 .boxsetting{
-opacity:0.7;
-background-color:rgb(155, 190, 220);
-border:1px solid rgb(155, 190, 220);
+ border: solid 1px black;
+ border-radius:12px;
+max-width:100%;
+max-height:100%;
+padding:20px;  
 }
-#parametres{
- display:grid;
- grid-template-columns:210px 210px 210px 210px 210px;
- grid-template-rows: 210px 210px 210px 210px 210px;
- gap:12px;
-} 
+#newsMeteo{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:45px;
+flex-direction: column;
+
+}
+.box{
+border: solid 1px black;
+border-radius:12px;
+width:150px;
+height:150px;
+
+}
 i{
-font-size:50px;
+font-size:35px;
 display:flex;
 justify-content:center;
 align-items:center;
 color:rgb(26, 25, 25);
 }
+body{
+    background-color: black;
+}
     
-     
+ input{
+  width: 100%;
+  font-size: 1.07rem;
+  padding:10px;
+  margin: 10px 0 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+ }    
