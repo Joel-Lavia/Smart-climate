@@ -3,7 +3,7 @@
     padding: 0;
    }
 main{
-background-color: rgb(228, 228, 239);
+    background-color:#87CEEB;; 
 gap:50px;
 } 
 #parametres{
@@ -43,14 +43,25 @@ align-items:center;
 color:rgb(26, 25, 25);
 }
 body{
-    background-color: black;
+background-color: black;
 }
     
- input{
-  width: 100%;
-  font-size: 1.07rem;
-  padding:10px;
-  margin: 10px 0 20px 0;
-  border-radius: 4px;
-  border: 1px solid #ccc;
- }    
+input{
+width: 100%;
+padding: 10px 0;
+border: none;
+border-radius: 4px;
+font-size: 1rem;
+color: #020202;
+margin:10px;
+
+}
+button{
+width:101%;
+padding: 10px 0;
+border: none;
+border-radius: 4px;
+font-size: 1rem;
+color: #fff;
+background: #5372F0;
+}
