@@ -3,8 +3,7 @@
     padding: 0;
    }
 main{
-    background-color:#87CEEB;; 
-gap:50px;
+ 
 } 
 #parametres{
 display:flex;
@@ -18,7 +17,8 @@ gap:20px;
  border-radius:12px;
 max-width:100%;
 max-height:100%;
-padding:20px;  
+padding:20px; 
+opacity:0,33; 
 }
 #newsMeteo{
 display:flex;
@@ -43,7 +43,7 @@ align-items:center;
 color:rgb(26, 25, 25);
 }
 body{
-background-color: black;
+background-color:rgba(72, 91, 239, 0.609);
 }
     
 input{
@@ -60,6 +60,7 @@ button{
 width:101%;
 padding: 10px 0;
 border: none;
+margin-left:9px;
 border-radius: 4px;
 font-size: 1rem;
 color: #fff;
