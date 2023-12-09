@@ -29,7 +29,7 @@ function weatherParameters(
   )}°`;
   climaticParameters[3].innerHTML = `<i class="fa-solid fa-wind"></i> vitesse du vent ${Math.round(
     windSpeed
-  )} KM/H`;
+  )} Km/h`;
   climaticParameters[4].innerHTML = `<i class="fa-solid fa-droplet"></i> Humidité relative ${Math.round(
     humidit
   )} %`;
@@ -53,6 +53,10 @@ function callApi(city) {
         data.wind.speed,
         data.main.humidity
       );
+     if(data.weather[0].description == ''){
+     alert('salut');
+     }
+
       console.log(data);
     })
   );
@@ -62,10 +66,6 @@ cheachVille.addEventListener("submit", function (event) {
   event.preventDefault();
   let villeInput = document.querySelector("input").value;
   callApi(villeInput);
-
-  // if(villeInput == " "){
-  // alert(`Veuiller entrée les Noms d'une Ville`)
-  // }
 });
 
 let options = {
