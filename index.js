@@ -43,7 +43,7 @@ function callApi(city) {
       nomDelaVille.innerText = data.name;
       let state = `<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png' alt="weather"/>`;
       previsionweather(data.weather[0].description, state);
-      previsionClimatique[1].innerHTML = `<i class='fa-solid fa-temperature-high'</i>${Math.round(
+      previsionClimatique[1].innerHTML = `ressentie <i class='fa-solid fa-temperature-high'></i>${Math.round(
       data.main.feels_like
       )}°`;
       weatherParameters(
@@ -75,12 +75,7 @@ let options = {
 };
 
 function success(pos) {
-  // let positiion  = pos.coords;
-  // console.log("Votre position actuelle est :");
-  //   console.log(`Latitude : ${positiion.latitude}`);
-  //   console.log(`Longitude : ${positiion.longitude}`);
-  //   console.log(`La précision est de ${positiion.accuracy} mètres.`);
-  // alert(callApi());
+  // alert('localisation reussi');
 }
 
 function error(err) {
