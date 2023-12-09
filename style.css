@@ -2,31 +2,33 @@
     margin: 0;
     padding: 0;
    }
-main{
  
-} 
 #parametres{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 align-items:center;
-gap:20px;
+gap:3em;
 }
+
 .boxsetting{
  border: solid 1px black;
- border-radius:12px;
+ border-radius:0.4em;
 max-width:100%;
 max-height:100%;
-padding:20px; 
-opacity:0,33; 
+padding:1.2em; 
+opacity:0.7; 
+border-radius:20px;
+background: linear-gradient(145deg, #2e23c7, #372aec);
+box-shadow:  6px 6px 12px #221a94,
+             -6px -6px 12px #4434ff;
 }
 #newsMeteo{
 display:flex;
 justify-content:center;
 align-items:center;
-gap:45px;
-flex-direction: column;
-
+gap:1em;
+flex-direction:column;
 }
 .box{
 border: solid 1px black;
@@ -43,9 +45,12 @@ align-items:center;
 color:rgb(26, 25, 25);
 }
 body{
-background-color:rgba(72, 91, 239, 0.609);
+background-color:#5b1ef6;
+font-size:2em;
+font-family: 'system-ui',Helvetica, Arial, sans-serif;
+
 }
-    
+ 
 input{
 width: 100%;
 padding: 10px 0;
@@ -54,15 +59,15 @@ border-radius: 4px;
 font-size: 1rem;
 color: #020202;
 margin:10px;
-
 }
 button{
 width:101%;
 padding: 10px 0;
 border: none;
 margin-left:9px;
-border-radius: 4px;
 font-size: 1rem;
 color: #fff;
-background: #5372F0;
+background: #3327dd;
+box-shadow:  -5px 5px 10px #2b21bc,
+             5px -5px 10px #3b2dfe;
 }

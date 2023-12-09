@@ -44,7 +44,7 @@ function callApi(city) {
       let state = `<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png' alt="weather"/>`;
       previsionweather(data.weather[0].description, state);
       previsionClimatique[1].innerHTML = `<i class='fa-solid fa-temperature-high'</i>${Math.round(
-        data.main.feels_like
+      data.main.feels_like
       )}°`;
       weatherParameters(
         data.main.temp,
