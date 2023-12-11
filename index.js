@@ -8,9 +8,12 @@ const cheachVille = document.querySelector("form");
 const st = document.querySelector("#state");
 console.log(cheachVille);
 
+//fonction de prevision meeteo
 function previsionweather(prevision, weatherState) {
   previsionClimatique[0].innerHTML = `${weatherState} ${prevision}`;
 }
+
+//fonction des parametres meteo
 function weatherParameters(
   temperatur,
   temperaturMax,
@@ -21,10 +24,10 @@ function weatherParameters(
   climaticParameters[0].innerHTML = `<i class='fa-solid fa-temperature-high'></i> ${Math.round(
     temperatur
   )}°`;
-  climaticParameters[1].innerHTML = `<i class='fa-solid fa-temperature-high'></i>max ${Math.round(
+  climaticParameters[1].innerHTML = `<i class='fa-solid fa-temperature-high'></i> Max ${Math.round(
     temperaturMax
   )}° `;
-  climaticParameters[2].innerHTML = `<i class='fa-solid fa-temperature-high'></i> min  ${Math.round(
+  climaticParameters[2].innerHTML = `<i class='fa-solid fa-temperature-high'></i> Min  ${Math.round(
     temperaturMin
   )}°`;
   climaticParameters[3].innerHTML = `<i class="fa-solid fa-wind"></i> vitesse du vent ${Math.round(
@@ -35,6 +38,7 @@ function weatherParameters(
   )} %`;
 }
 
+//fonction pour trouver les differents lieu
 function callApi(city) {
   //url de l'appel de l'API
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=fr&at&lon&appid=${apiKey}&units=metric`;
@@ -44,7 +48,7 @@ function callApi(city) {
       let state = `<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png' alt="weather"/>`;
       previsionweather(data.weather[0].description, state);
       previsionClimatique[1].innerHTML = `ressentie <i class='fa-solid fa-temperature-high'></i>${Math.round(
-      data.main.feels_like
+        data.main.feels_like
       )}°`;
       weatherParameters(
         data.main.temp,
@@ -53,19 +57,20 @@ function callApi(city) {
         data.wind.speed,
         data.main.humidity
       );
-     if(data.weather[0].description == ''){
-     alert('salut');
-     }
-
       console.log(data);
     })
   );
 }
 
+//event onclick pour le boutton rechercher
 cheachVille.addEventListener("submit", function (event) {
   event.preventDefault();
   let villeInput = document.querySelector("input").value;
   callApi(villeInput);
+
+  if (villeInput) {
+    alert(villeInput);
+  }
 });
 
 let options = {
@@ -84,4 +89,5 @@ function error(err) {
 
 navigator.geolocation.getCurrentPosition(success, error, options);
 
+//appel de la fonction
 callApi("Kinshasa");

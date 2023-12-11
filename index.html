@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="1530385_weather_clouds_rain_storm_thunder_icon.png" type="image/x-icon" >
-    <title>Document</title>
+    <title>METEO METTELSAT</title>
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/0cb0a4210a.js" crossorigin="anonymous"></script>
 </head>
@@ -17,7 +17,7 @@
 <main>
 <!--recherche des villes -->
 <section style="display:flex;flex-direction:column; justify-content:center;align-items:center;">
-<img src="rain_578146.png" style="height:100px; width:100px;" alt="">
+<!-- <img src="rain_578146.png" style="height:100px; width:100px;" alt=""> -->
     <form>
         <input type="search"  placeholder=" Ville" id="ville"> 
         <button type="submit">Recherche</button>
@@ -33,16 +33,15 @@
             <div class="box" style="border-style:none;text-align:center;"></div>
              
         </div>
-
-        <div>
-           
+              
+        <div id="divIfram">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1zFMqJ3CKSFMBskUZiDJ6TEA_wYU7eBIqMSyIZgnWmnd7azfFBQ3M23bGParDMUdnpgRlqnRCLQS0/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         </div>
-
     </section>
 
-    <!--section des parametres climatiques-->
+    <!--section des parametres meteo-->
     <section class="parametreClimatique" >
-         <!--Parametre Climatique-->
+         <!--Parametre meteo-->
          <div id="parametres">
             <div class="boxsetting" style="font-size:30px; color:white;display:flex;justify-content:center;align-items:center"></div> <!--Temperature--> 
             <div class="boxsetting" style="font-size:30px; color:whitesmoke;display:flex;justify-content:center;align-items:center"></div> <!--Temperature max-->
