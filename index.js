@@ -1,5 +1,5 @@
 //cle API
-const apiKey = "df50276529db577511b060092bc121b0";
+const apiKey = "";
 //selection des elements htlm
 const nomDelaVille = document.querySelector("h2");
 const previsionClimatique = document.querySelectorAll(".box");
