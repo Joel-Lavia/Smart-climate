@@ -38,7 +38,6 @@ function weatherParameters(
   )} %`;
 }
 
-//fonction pour trouver les differents lieu
 function callApi(city) {
   //url de l'appel de l'API
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=fr&at&lon&appid=${apiKey}&units=metric`;
